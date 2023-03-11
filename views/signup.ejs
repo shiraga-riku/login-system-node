@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー作成</title>
+</head>
+<body>
+  <form action="/user/signup" method="POST">
+    <input type="text" name="name" placeholder="名前">
+    <input type="text" name="password" placeholder="パスワード">
+    <input type="text" name="email" placeholder="メールアドレス">
+    <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+    <button type="submit">ユーザー作成</button>
+  </form>
+</body>
+</html>
